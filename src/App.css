@@ -187,3 +187,10 @@ textarea {
   overflow: hidden;
   overflow-y: auto;
 }
+
+.postFlag {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
