@@ -1,4 +1,4 @@
-import React, { useEffect,useContext, useState } from "react";
+import React, { useEffect, useContext, useState } from "react";
 import { addDoc, collection, serverTimestamp } from "firebase/firestore";
 import { auth, db } from "../firebase-config";
 import { useNavigate } from "react-router-dom";
@@ -10,7 +10,7 @@ const CreatePost = ({ isAuth }) => {
   const navigate = useNavigate();
   const postsCollectionRef = collection(db, "Posts");
 
-  const [setPostFlag] = useContext(FlagContext);
+  const{ setPostFlag} = useContext(FlagContext);
 
   // Create Post in FireBase
   const createPost = async () => {
