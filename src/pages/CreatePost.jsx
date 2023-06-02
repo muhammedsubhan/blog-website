@@ -10,7 +10,7 @@ const CreatePost = ({ isAuth }) => {
   const navigate = useNavigate();
   const postsCollectionRef = collection(db, "Posts");
 
-  const{ setPostFlag} = useContext(FlagContext);
+  const { setPostFlag } = useContext(FlagContext);
 
   // Create Post in FireBase
   const createPost = async () => {

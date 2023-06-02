@@ -8,7 +8,7 @@ const Home = ({ isAuth }) => {
   // const [postFlag, setPostFlag] = useState(false);
   const postsCollectionRef = collection(db, "Posts");
 
-  const{postFlag} = useContext(FlagContext);
+  const { postFlag } = useContext(FlagContext);
 
   // console.log(postFlag);
   useEffect(() => {
